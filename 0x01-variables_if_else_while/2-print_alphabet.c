@@ -1,15 +1,19 @@
 #include <stdio.h>
+
 /**
-*main - print alpha in lower case
-*Return: Always 0 (Success)
-*/
+ * main - prints alpha in lower case
+ * Return: Always 0
+ */
 int main(void)
 {
-char lu;
-for (lu = 'a'; lc <= 'z'; lc++)
+
+	char lc;
+
+	for (lc = 'a'; lc <= 'z'; lc++)
 	{
-	putchar(lu)
+		putchar(lc);
 	}
-putchar('\n');
-return (0);
+	putchar('\n');
+	return (0);
+
 }
