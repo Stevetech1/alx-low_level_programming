@@ -15,16 +15,18 @@ int main(void)
 		for (ones = '0'; ones <= '9'; ones++)/* print ones digit*/
 		{
 			if (!((ones == tens) || (tens > ones)))/* enliminate repitition*/
-				putchar(tens);
-			putchar(ones);
-			if (!(ones == '9' && tens == '8'))/* addes comma and space*/
 			{
-				putchar(',');
-				putchar(' ');
+				putchar(tens);
+				putchar(ones);
+				if (!(ones == '9' && tens == '8'))/* addes comma and space*/
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
-putchar('\n');
+	putchar('\n');
 
-return (0);
+	return (0);
 }
