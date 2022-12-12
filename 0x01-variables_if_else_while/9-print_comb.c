@@ -1,21 +1,26 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
- * main - prints all combination of single digits
- * Return: Always 0
+ * main -m main block
+ * Description: prints all single number of base 10ase 10
+ * starting from a new line
+ * Return: 0
  */
 int main(void)
 {
-	int n;
+	int c = 0;
 
-	for (n = 48; n < 58; n++)
-
-		putchar(n);
-	if (n != 57)
+	while (c < 10)
 	{
-		putchar(',');
-		putchar(' ');
+		putchar(48 + c);
+		if (c != 9)
+		{
+			putchar(',');
+			putchar(' ');
+		}
+		c++;
 	}
+
 	putchar('\n');
 	return (0);
 }
