@@ -3,7 +3,7 @@
 /**
  * times_tabke - print the 9 times table
  */
-void times_table print(void)
+void print times_table(void)
 {
 
 	int num, mult, prod;
