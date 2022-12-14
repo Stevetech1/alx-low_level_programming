@@ -18,8 +18,8 @@ int main(void)
 			printf(", %ld", k);
 		else
 		{
-			k += ji;
-			j = k - ji
+			k += j;
+			j = k - j;
 				printf(", %ld", k);
 		}
 		++i;
