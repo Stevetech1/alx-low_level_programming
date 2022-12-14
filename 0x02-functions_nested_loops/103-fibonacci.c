@@ -3,7 +3,7 @@
 /**
  *main - Prints the add of the Fibonacci numbers
  *
- * Return: Always 0.
+ * Return: Always 0
  */
 int main(void)
 {
@@ -20,6 +20,6 @@ int main(void)
 		n1 = n2;
 		n2 = fn;
 	}
-	printf("\n");
+	printf('\n');
 	return (0);
 }
