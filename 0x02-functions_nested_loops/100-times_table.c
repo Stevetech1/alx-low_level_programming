@@ -7,7 +7,7 @@
  *
  * Return: no return
  */
-void print_times_table(int n)
+void (int n)
 {
 	int a, b, op;
 
@@ -41,7 +41,6 @@ void print_times_table(int n)
 				}
 			}
 			_putchar('\n');
-			return (0);
 		}
 	}
 }
