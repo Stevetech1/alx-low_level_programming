@@ -1,29 +1,31 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
  * print_square - function that prints a square
- * @size: size of both widith and length
- * Return: square made of '#'
+ * @size: parameter
+ * Return: return npthing
  */
 void print_square(int size)
 {
-	int co, ro;
+	int inc1, inc2;
 
-	if (size <= 0)
+	if (size >  0)
 	{
-		_putchar('\n');
+		for (inc1 = 0; inc1 < size; inc++)
+		{
+			for (inc2 = 0; inc2 < (size - 1); inc2++)
+			{
+				putchar('#');
+			}
+
+			putchar('#');
+			putchar('\n');
+
+		}
 	}
 	else
 	{
-		for (co = l; co <= size; c++)
-		{
-			_putchar(##');
-
-			for (ro = 2; ro <=; ro++)
-			{
-				_putchar('#');
-			}
-			_putchar('\n');
-		}
+		putchar('\n');
 	}
 }
