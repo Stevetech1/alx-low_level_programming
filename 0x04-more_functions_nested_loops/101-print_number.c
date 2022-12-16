@@ -33,7 +33,7 @@ void print_number(int n)
 	}
 	while (r > 0)
 	{
-		cr = (char)((r % 10) + '0')
+		cr = (char)((r % 10) + '0');
 			_putchar(cr);
 		r = r / 10;
 		ct--;
