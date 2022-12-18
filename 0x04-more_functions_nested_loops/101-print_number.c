@@ -1,13 +1,10 @@
-#include <stdio.h>
 #include "main.h"
-#include <stdlib.h>
 
 /**
  * print_number - prints an integer
  * @n: random integer
  * Return: void
  */
-
 void print_number(int n)
 {
 	char ld, cr;
@@ -17,12 +14,12 @@ void print_number(int n)
 	if (n < 0)
 	{
 		putchar('-');
-		id = (char)('0' - (n % 10));
+		ld = (char)('0' - (n % 10));
 		n = n / -10;
 	}
 	else
 	{
-		id = (char)((n % 10) + '0');
+		ld = (char)((n % 10) + '0');
 		n = n / 10;
 	}
 	r = 0;
