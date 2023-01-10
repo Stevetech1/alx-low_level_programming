@@ -8,7 +8,7 @@
  *
  * Return: pointer to the new string (Success), NULL (Error)
  */
-char *argstostr(int ac, char *av)
+char *argstostr(int ac, char **av)
 {
 	int i, j, k, len;
 	char *str;
@@ -36,7 +36,7 @@ char *argstostr(int ac, char *av)
 			str[k] = av[i][j];
 			k++;
 		}
-		str[k] = '\n';
+		str[k] = '\0';
 		k++;
 	}
 	return (str);
