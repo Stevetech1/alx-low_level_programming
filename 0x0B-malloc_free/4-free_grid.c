@@ -7,7 +7,7 @@
  * @grid: grid to free
  * @height: height of the grid
  */
-void free _grid(int **grid, int height)
+void free_grid(int **grid, int height)
 {
 	int i;
 
