@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * *argstostr - main entry
@@ -21,7 +22,7 @@ char *argstostr(int ac, char **av)
 			l++;
 	}
 	l += ac;
-	str = malloc(sizeof(char) * l + 1);
+	str = malloc(sizeof(char) * i + 1);
 	if (str == NULL)
 		return (NULL);
 	for (i = 0; i < ac; i++)
