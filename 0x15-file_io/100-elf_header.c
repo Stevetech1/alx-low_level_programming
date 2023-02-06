@@ -1,33 +1,3 @@
-
-Search or jump to…
-Pulls
-Issues
-Codespaces
-Marketplace
-Explore
- 
-@Stevetech1 
-samibirhanu1
-/
-alx-low_level_programming
-Public
-Fork your own copy of samibirhanu1/alx-low_level_programming
-Code
-Issues
-Pull requests
-1
-Actions
-Projects
-Security
-Insights
-alx-low_level_programming/0x15-file_io/100-elf_header.c
-@samibirhanu1
-samibirhanu1 all tasks before README.md
-Latest commit 75c4976 on Oct 31, 2022
- History
- 1 contributor
-314 lines (286 sloc)  6.69 KB
-
 #include <elf.h>
 #include <sys/types.h>
 #include <sys/stat.h>
@@ -60,9 +30,9 @@ void check_elf(unsigned char *e_ident)
 	for (index = 0; index < 4; index++)
 	{
 		if (e_ident[index] != 127 &&
-		    e_ident[index] != 'E' &&
-		    e_ident[index] != 'L' &&
-		    e_ident[index] != 'F')
+				e_ident[index] != 'E' &&
+				e_ident[index] != 'L' &&
+				e_ident[index] != 'F')
 		{
 			dprintf(STDERR_FILENO, "Error: Not an ELF file\n");
 			exit(98);
